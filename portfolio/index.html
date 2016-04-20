@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+
+        <title>최창규 포트폴리오</title>      
+        <link rel="stylesheet" href="css/css.css" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('home').style.borderBottom = "2px solid white";
+
+            
+            var li =[], category = [],main = [], project = [];
+            li[0] = document.getElementById('home');
+            li[1] = document.getElementById('profile');
+            li[2] = document.getElementById('project');
+            li[3] = document.getElementById('experience');
+            li[4] = document.getElementById('portfolio');
+            
+            category[0] = document.getElementById('home_title');
+            category[1] = document.getElementById('profile_title');
+            category[2] = document.getElementById('project_title');
+            category[3] = document.getElementById('experience_title');
+            category[4] = document.getElementById('portfolio_title');
+
+            main[0] = document.getElementById('home_main');
+            main[1] = document.getElementById('profile_main');
+            main[2] = document.getElementById('project_main');
+            main[3] = document.getElementById('experience_main');
+            main[4] = document.getElementById('portfolio_main');
+            
+
+            project[0] = document.getElementById('ucc_img');
+            project[1] = document.getElementById('webdesign_img');
+            project[2] = document.getElementById('hameonham_img');
+            project[3] = document.getElementById('ucc_img');
+            project[4] = document.getElementById('ucc_img');
+            project[5] = document.getElementById('ucc_img');
+            project[6] = document.getElementById('java_img');
+
+            li[0].onclick = function() {
+                alert("메인누름");
+                for (var i = 4; i >= 0; i--) {
+                    li[i].style.borderBottom = "none"
+                    category[i].style.display = "none"
+                    main[i].style.display="none"
+
+                }
+                category[0].style.display = "block"
+                li[0].style.borderBottom = "2px solid white"
+                main[0].style.display = 'inline-block';
+
+            };
+
+            li[1].onclick = function() {
+                for (var i = 4; i >= 0; i--) {
+                    li[i].style.borderBottom = "none"
+                    category[i].style.display = "none"
+                    main[i].style.display="none"
+                }
+                li[1].style.borderBottom = "2px solid white"
+                category[1].style.display = "block"
+                main[1].style.display = 'inline-block';
+            };
+
+            li[2].onclick = function() {
+                for (var i = 4; i >= 0; i--) {
+                    li[i].style.borderBottom = "none"
+                    category[i].style.display = "none"
+                    main[i].style.display="none"
+                }
+                li[2].style.borderBottom = "2px solid white"
+                category[2].style.display = "block"
+                main[2].style.display = 'inline-block';
+            };
+
+            li[3].onclick = function() {
+                for (var i = 4; i >= 0; i--) {
+                    li[i].style.borderBottom = "none"
+                    category[i].style.display = "none"
+                    main[i].style.display="none"
+                }
+                li[3].style.borderBottom = "2px solid white"
+                category[3].style.display = "block"
+                main[3].style.display = 'inline-block';
+            };
+
+            li[4].onclick = function() {
+                for (var i = 4; i >= 0; i--) {
+                    li[i].style.borderBottom = "none"
+                    category[i].style.display = "none"
+                    main[i].style.display="none"
+                }
+                li[4].style.borderBottom = "2px solid white"
+                category[4].style.display = "block"
+                main[4].style.display = 'inline-block';
+            };
+
+            
+      
+        };
+
+        /*
+        $('project_img_div').ready(function(){
+      
+          if ($(window).width()>=1123) {
+                    alert("1123보다 큼!");
+                    $('project_img_div').css("float","none");
+                } else{
+                    alert("1123보다 작음");
+                    $('project_img_div').css("float","left");
+            }
+        })
+        */
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                $('.nav-main').css("background-color","#ec523f");
+            } else {
+               $('.nav-main').css("background-color","none");
+            }
+        });
+
+
+</script>
+    </head>
+<body>
+		<header class="banner" role="banner">
+            <div class="header-inner">
+                <nav class="nav-main" role="navigation">
+                    <div class="container">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li id="home"><a href="#body">Home</a></li>
+                            <li id="profile"><a href="#service">profile</a></li>
+                            <li id="project"><a href="#portfolio">project</a></li>
+                            <li id="experience"><a href="#experience">experience</a></li>
+                            <li id="portfolio"><a href="#price">portfolio</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <hgroup>
+                    <div class="container">
+                        <div class="main_div">
+                            <div id="home_title">
+                                <h1>H e l l o !</h1>
+                                <p>Choi Chang Kyu PORTFOLIO</p>
+                            </div>
+
+                            <div id="profile_title" class="main_div_div">
+                                <h1>P R O F I L E</h1>
+                            </div>
+
+                        
+                            <div id="project_title" class="main_div_div">
+                                <h1>P R O J E C T</h1>
+                            </div>
+                            
+                            <div id="experience_title" class="main_div_div">
+                                <h1>E X P E R I E N C E</h1> 
+                            </div>
+                            
+                            <div id="portfolio_title" class="main_div_div">
+                                <h1>P O R T F O L I O</h1>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </hgroup>
+            </div>
+        </header>
+        <div class="wrap container" role="document">
+            <div style="text-align: center;">
+                <div id="home_main">
+                    <p style="font-size: 20px">선린인터넷고등학교 3학년 재학중이고 웹 개발자를 희망하는 최창규의 포트폴리오입니다.</p>
+                </div>
+            </div>
+
+            <div id="profile_main">
+                <div class="left_profile">
+                    <a><img id="profile_img" src="../portfolio/img/profile.jpg"></a>
+                </div>
+
+                <div class="left_profile2">
+                    <h1 class="profile_p">최 창 규</h1>
+                    <p class="profile_p">1998.10.7</p>
+                    <p>선린인터넷고등학교 3학년 재학중</p>
+                    <p>모바일 앱 개발 동아리 애플파이 5기</p>
+                </div>
+                <div class="right_profile">
+                    <p>-HTML</p>
+                    <p>-CSS</p>
+                    <p>-JavaScript</p>
+                    <p>-JQuery</p>
+                    <p>-PhotoShop</p>
+                    <p>-Android</p>
+                    <p>-JAVA</p>
+                    <p>-flask</p>
+                </div>
+                <div class="right_profile">
+                    <p>-Python</p>
+                    <p>-Final Cut Pro</p>
+                </div>       
+            </div>
+
+            <div style="text-align: center;">
+                <div id="project_main">
+                    <div class="project_img_div ucc">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/mang.png">
+                            <div class="project_hover">
+                                <p>전기를 사용할 수 없을때의 <br>끔찍함을 보여주는 UCC입니다.</p>
+                                <p style="font-size: 20px">영상 촬영 및 편집</p>
+                                <img id="ucc_img"src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>전기절약UCC / 2015.04</a>
+                    </div>
+
+                    <div class="project_img_div web">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/web_design1.jpg" >
+                            <div class="project_hover">
+                                <p>웹사이트를 기획한 후<br>포토샵으로 디자인만한 프로젝트입니다.(1인)</p>
+                                <p style="font-size: 20px">디자인</p>
+                                <img id="webdesign_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>웹사이트 디자인 / 2014.11</a>
+                    </div>
+                    
+                    <br>
+
+                    <div class="project_img_div web">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/website.png">
+                            <div class="project_hover">
+                                <p>운동,게임 등의 컨텐츠를 같이할 <br>사람을 찾기위해 만들어진 사이트입니다.(2인)</p>
+                                <p style="font-size: 20px">Django, html, css 개발 100%</p>
+                                <img id="hameonham_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>하면함 (같이할친구찾는 웹사이트) / 2015.11</a>
+                    </div>
+                    
+                    <div class="project_img_div web">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/web_school.png">
+                            <div class="project_hover">
+                                <p>선린인터넷고등학교 홈페이지 <br>리디자인 프로젝트(2인)</p>
+                                <p style="font-size: 20px">html, css 개발</p>
+                                
+                                <img id="school_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>학교홈페이지 리디자인 / 2015.08</a>
+                    </div>
+
+                    <br>
+                    <div class="project_img_div web">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/spaceguarder.png">
+                            <div class="project_hover">
+                                <p>적이 쏘는 총알을 튕겨서 적을 쓰러트리고 <br>적의 총알로부터 기지를 지키는 슈팅게임입니다.(4인)</p>
+                                <p style="font-size: 20px">기획 및 Android 보조 개발</p>
+                                <img id="spaceguarder_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>SpaceGuarder(슈팅게임, 유니티, 기획 및 개발) / 2015.11</a>
+                    </div>
+                    
+                    <div class="project_img_div app">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/app_map1.png">
+                            <div class="project_hover">
+                                <p>학교 안드로이드 소수전공 심화과정에서 <br>네이버 검색API기반 장소 검색 앱(1인)</p>
+                                <p style="font-size: 20px">Android 개발</p>
+                                <img id="api_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>네이버API활용 장소검색앱 / 2016.01</a>
+                    </div>
+
+                    <br>
+                    <div class="project_img_div web">
+                        <div class="project_img_div2">
+                            <img src="../portfolio/img/java_gui_project2.png">
+                            <div class="project_hover">
+                                <p>Java Gui를 배우고<br>Gui를 이용한 같은그림찾기 프로그램 개발(2인)</p>
+                                <p style="font-size: 20px">Java 개발(리소스:친구들)</p>
+                                <img id="java_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                            </div>
+                        </div>
+                        <a>같은 그림 찾기 / 2015.9</a>
+                    </div>
+                </div>
+                
+                <div class="project_img_div_dtl ucc1">
+                    <div class="project_img_div2">
+                        <img src="../portfolio/img/mang.png">
+                        
+                    </div>
+                    <a>전기절약UCC / 2015.04</a>
+                </div>
+         
+
+            </div>
+
+
+            <div style="text-align: center;">
+                <div id="experience_main">
+                    <div class="lecture">
+                        <img src="../portfolio/img/lecture1_1.jpg">
+                        <h1>스피치 강연</h1>
+                        <p>김호정 아나운서님이 저희 학교에 오셔서 스피치관련 강의를 해주셨습니다. 말을 잘하지 못하는 저에겐 꼭필요한 강연이었습니다.</p>
+                    </div>
+                    <br>
+                    <div class="lecture">
+                        <img src="../portfolio/img/lecture2.png">
+                        <h1>애플파이(동아리) 기획강의</h1>
+                        <p>학교 동아리에서 1학년들을 대상으로 웨어러블 디바이스를 활용한 앱 기획 프로그램을 하였는데,<br>저는 한팀의 조교로 참여해 지속적으로 기획을 피드백 해주었고 3등을 수상하였습니다</p>
+                    </div>
+                    <div class="lecture">
+                        <img src="../portfolio/img/lecture3.png">
+                        <h1>창업 강의</h1>
+                        <p>창업의 중요성, 마케팅 방법 등의 창업 강의를 들었습니다. 당시 창업에 흥미가 있던 저에게 좋은 시간이었습니다.</p>
+                    </div>
+                    <div class="lecture">
+                        <img src="../portfolio/img/lecture4.png">
+                        <h1>3D 프린터 체험</h1>
+                        <p>이 당시 큰 관심을 끌었던 3D프린터에 대해 설명도 듣고 체험까지 해볼 수 있어서 좋았습니다.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div id="portfolio_main">
+                    <a href="https://drive.google.com/open?id=0B_gNZ96B1Ds1cmR5Tl9wM1VteUU">
+                    <img src="../portfolio/img/portfolioImg.png" style="cursor: pointer;"></a>
+                    <p>포트폴리오 구글 드라이브 공유링크</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+</body>
