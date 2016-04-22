@@ -1,6 +1,31 @@
 body{
 	margin: 0;
 	background: #EAEAEA;
+	font-family: 'Lobster';
+}
+
+#bg_container{ 
+	height:1000px; 
+	overflow:hidden; 
+}
+        
+#bg{ 
+	width:100%; 
+	height:900px; 
+}
+#content{ 
+	position:absolute; 
+	top:0px; 
+	padding:30px; 
+	color:#FFF; 
+	text-shadow:#000 2px 2px; 
+}
+.redredred {
+    background-color: red;
+    opacity: 0.5;
+    width:100%; 
+    height:900px;
+
 }
 .banner{
 	background: url(../img/mamamoo.jpg) no-repeat center;

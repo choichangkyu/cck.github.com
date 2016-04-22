@@ -41,12 +41,17 @@
             project[5] = document.getElementById('ucc_img');
             project[6] = document.getElementById('java_img');
 
+            var ucc1 = document.getElementById('ucc1');
+            var ucc2 = document.getElementById('ucc2');
+            
+
             li[0].onclick = function() {
-                alert("메인누름");
                 for (var i = 4; i >= 0; i--) {
                     li[i].style.borderBottom = "none"
                     category[i].style.display = "none"
                     main[i].style.display="none"
+                    ucc1.style.display="none"
+                    ucc2.style.display="none"
 
                 }
                 category[0].style.display = "block"
@@ -60,6 +65,8 @@
                     li[i].style.borderBottom = "none"
                     category[i].style.display = "none"
                     main[i].style.display="none"
+                    ucc1.style.display="none"
+                    ucc2.style.display="none"
                 }
                 li[1].style.borderBottom = "2px solid white"
                 category[1].style.display = "block"
@@ -71,6 +78,8 @@
                     li[i].style.borderBottom = "none"
                     category[i].style.display = "none"
                     main[i].style.display="none"
+                    ucc1.style.display="none"
+                    ucc2.style.display="none"
                 }
                 li[2].style.borderBottom = "2px solid white"
                 category[2].style.display = "block"
@@ -82,6 +91,8 @@
                     li[i].style.borderBottom = "none"
                     category[i].style.display = "none"
                     main[i].style.display="none"
+                    ucc1.style.display="none"
+                    ucc2.style.display="none"
                 }
                 li[3].style.borderBottom = "2px solid white"
                 category[3].style.display = "block"
@@ -93,13 +104,22 @@
                     li[i].style.borderBottom = "none"
                     category[i].style.display = "none"
                     main[i].style.display="none"
+                    ucc1.style.display="none"
+                    ucc2.style.display="none"
                 }
                 li[4].style.borderBottom = "2px solid white"
                 category[4].style.display = "block"
                 main[4].style.display = 'inline-block';
             };
 
-            
+            project[2].onclick = function(){
+                main[2].style.display="none"
+                ucc1.style.display="block"
+            }
+            project[0].onclick = function(){
+                main[2].style.display="none"
+                ucc2.style.display="block"
+            }
       
         };
 
@@ -227,7 +247,7 @@
                             <div class="project_hover">
                                 <p>웹사이트를 기획한 후<br>포토샵으로 디자인만한 프로젝트입니다.(1인)</p>
                                 <p style="font-size: 20px">디자인</p>
-                                <img id="webdesign_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                                
                             </div>
                         </div>
                         <a>웹사이트 디자인 / 2014.11</a>
@@ -254,7 +274,7 @@
                                 <p>선린인터넷고등학교 홈페이지 <br>리디자인 프로젝트(2인)</p>
                                 <p style="font-size: 20px">html, css 개발</p>
                                 
-                                <img id="school_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                                
                             </div>
                         </div>
                         <a>학교홈페이지 리디자인 / 2015.08</a>
@@ -266,11 +286,11 @@
                             <img src="../portfolio/img/spaceguarder.png">
                             <div class="project_hover">
                                 <p>적이 쏘는 총알을 튕겨서 적을 쓰러트리고 <br>적의 총알로부터 기지를 지키는 슈팅게임입니다.(4인)</p>
-                                <p style="font-size: 20px">기획 및 Android 보조 개발</p>
-                                <img id="spaceguarder_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                                <p style="font-size: 20px">기획</p>
+                                
                             </div>
                         </div>
-                        <a>SpaceGuarder(슈팅게임, 유니티, 기획 및 개발) / 2015.11</a>
+                        <a>SpaceGuarder(슈팅게임, 기획) / 2015.11</a>
                     </div>
                     
                     <div class="project_img_div app">
@@ -279,7 +299,7 @@
                             <div class="project_hover">
                                 <p>학교 안드로이드 소수전공 심화과정에서 <br>네이버 검색API기반 장소 검색 앱(1인)</p>
                                 <p style="font-size: 20px">Android 개발</p>
-                                <img id="api_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                                
                             </div>
                         </div>
                         <a>네이버API활용 장소검색앱 / 2016.01</a>
@@ -292,19 +312,21 @@
                             <div class="project_hover">
                                 <p>Java Gui를 배우고<br>Gui를 이용한 같은그림찾기 프로그램 개발(2인)</p>
                                 <p style="font-size: 20px">Java 개발(리소스:친구들)</p>
-                                <img id="java_img" src="../portfolio/img/search.png" style="cursor: pointer">
+                                
                             </div>
                         </div>
                         <a>같은 그림 찾기 / 2015.9</a>
                     </div>
                 </div>
                 
-                <div class="project_img_div_dtl ucc1">
-                    <div class="project_img_div2">
-                        <img src="../portfolio/img/mang.png">
-                        
-                    </div>
-                    <a>전기절약UCC / 2015.04</a>
+                <div class="project_img_div_dtl" id="ucc1" style="display: none;">
+                    <iframe width="640" height="390" src="https://www.youtube.com/embed/ObX5v7Mp91I?controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;playlist=LuD3_umIxgw" frameborder="0" allowfullscreen></iframe>
+                    <p>학교 django 2인 프로젝트로 파트너 친구는 부트스트랩파일만 던져주고 django,html,css부분은 제가 다 하였습니다.<br>이 프로젝트를 하면서 django라는 언어가 로그인 회원가입과 같은 기능을 쉽게 구연 할 수 있다는점에서 신기했고 서버쪽 언어에 관심을 가지게 되었습니다.</p>
+                    
+                </div>
+                <div class="project_img_div_dtl" id="ucc2" style="display: none;">
+                    <iframe width="640" height="390" src="https://www.youtube.com/embed/t6W6jM_Mr9I" frameborder="0" allowfullscreen></iframe>
+                    
                 </div>
          
 
