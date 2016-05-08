@@ -1,0 +1,11 @@
+{% extends "wPlayGame/base.html" %}
+{% block content %}
+    
+        <h1 id="c"><a class ="post_a" >제목</a> {{ post.title }}</h1>
+        <h1 id="c"><a class ="post_a" id="post_b">글쓴이</a> {{ post.author }}</h1>
+        <br>
+        <a id="detail_text">{{ post.text }}</a>
+        
+        <br>
+        <button ><a href="{% url 'wPlayGame.views.post_list' %}">목록으로</a></button>
+{% endblock content %}

@@ -1,0 +1,235 @@
+{% extends "wPlayGame/base.html" %}
+{% block content %}
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+                    <br>
+				<h4>저희 팀을 소개 합니다!!</h4>
+				<h4>ㅡ개발 팀ㅡ</h4>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+            <div class="col-lg-1">
+			</div><!-- col-lg-3 -->
+			<div class="col-lg-2">
+				<img class="img-circle" src="/static/img/ckdrn.jpg" width="110" height="110" alt="">
+				<h4>최창규</h4>
+				 <h4 id="info">선린3년차 개발자<br>
+                    선린3년차 기획자<br>
+                    <br></h4>
+				<p><a href="#">@최창규_Wplay</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="/static/img/dudals.jpg" width="110" height="110" alt="">
+				<h4>손영민</h4>
+				<h4 id="info">선린3년차 개발자<br>
+                   선린3년차 기획자<br>
+                   선린5년차 와우저
+                </h4>
+				<p><a href="#">@손영민_Wplay</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="/static/img/gurwls.jpg" width="110" height="110" alt="">
+				<h4>김혁진</h4>
+				<h4 id="info"> 선린3년차 개발자<br>
+                    선린3년차 기획자<br>
+                    <br>
+                    </h4>
+				<p><a href="#">@김혁진_Wplay</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="/static/img/ㅎㅎ.jpg" width="110" height="110" alt="">
+				<h4>김문기</h4>
+				 <h4 id="info">선린3년차 개발자<br>
+                    선린3년차 기획자<br>
+                    미르3년차 디자이너
+                </h4>
+                <p><a href="#">@김문기_Wplay</a></p>
+            </div>
+                <div class="col-lg-2">
+				<img class="img-circle" src="/static/img/퀸세정.jpg" width="110" height="110" alt="">
+				<h4>김찬영</h4>
+				 <h4 id="info">선린3년차 개발자<br>
+                    선린3년차 기획자<br>
+                     <br>
+                </h4>
+                <p><a href="#">@김찬영_Wplay</a></p>
+		</div><!-- row -->
+            <div class="col-lg-1">
+			</div><!-- col-lg-3 -->
+		<br>
+		<br>
+	</div><!-- container -->
+
+
+	<!-- PORTFOLIO SECTION -->
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<h4>OUR SKILLS</h4>
+				<br>
+				
+			<!-- First Chart -->
+                <div class="col-lg-1">
+			</div><!-- col-lg-3 -->
+			<div class="col-lg-2">
+				<canvas id="canvas" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 100,
+								color:"#3498db"
+							},
+							{
+								value : 0,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>web server</b></p>
+				<p><small>web server 능수능란하게 사용가능</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Second Chart -->
+			<div class="col-lg-2">
+				<canvas id="canvas2" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 100,
+								color:"#3498db"
+							},
+							{
+								value : 0,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>unity</b></p>
+				<p><small>unity만 있으면 못만드는 게임이란 없다!</small></p>
+			</div><!-- /col-lg-3 -->
+			
+			<!-- Third Chart -->
+			<div class="col-lg-2">
+				<canvas id="canvas3" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 80,
+								color:"#3498db"
+							},
+							{
+								value : 20,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Planner</b></p>
+				<p><small>내 머리속에서 아이디어가 셈솟는구나</small></p>
+			</div><!-- /col-lg-3 -->
+			
+			<!-- Fourth Chart -->
+			<div class="col-lg-2">
+				<canvas id="canvas4" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 90,
+								color:"#3498db"
+							},
+							{
+								value : 10,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Designer</b></p>
+				<p><small>포토샵만 있으면 못그릴게 없다</small></p>
+			</div><!-- /col-lg-3 -->
+                <div class="col-lg-2">
+				<canvas id="canvas5" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 70,
+								color:"#3498db"
+							},
+							{
+								value : 30,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas5").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>web front</b></p>
+				<p><small>뭐든 다 가져다 써보자</small></p>
+			</div><!-- /col-lg-3 -->   
+              <div class="col-lg-1">
+			</div><!-- col-lg-3 -->
+				
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- DG -->
+
+
+
+	
+	<div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4>Wplay를 소개합니다</h4>
+					<p>저희 Wplay는 세계를 열고 세계를 이끌고 세계를 만들어라 라는 비전을 가지고 글로벌 시장 진출을 목표로 하는 startup 회사 입니다. Wplay팀원들은 모두 선린출신으로 열정을 가지고 게임을 개발중 입니다! </p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
+	
+	
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				{% for post in posts %}
+    
+				    <div class="post">
+				        <div class="date" >
+				            {{ post.published_date }}
+				        </div>
+				        
+				        <h2 id="c"><a id="post_text" href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+
+				        <p id="post_text">{{ post.text|linebreaks }}</p>
+
+				        <a href="{% url 'blog.views.post_detail' pk=post.pk %}">댓글 수 {{ post.comments.count }}</a>
+				        <hr id="post_hr">
+				        
+				    </div>
+
+    			{% endfor %}
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<div id="headerwrap">
+		<div class="container">
+			<div class="centered">
+				<div class="col-lg-offset-2">
+				<h1 id = "a">같이할 친구가 없어요?</b></h1>
+				<h2 id = "b">그렇다면 너는 하면함이 딱이야!</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+
+
+   
+<h1 id="c">최신글</h1>
+<br>
+<br>
+<br>
+<br>
+
+{% for post in posts %}
+
+<div class="col-lg-3">
+{% if post.category = 'sport' %}
+<img src="/static/assets/img/sball.png" id="category_img"></img>
+{% endif %}
+{% if post.category = 'food' %}
+<img src="/static/assets/img/food.png" id="category_img"></img>
+{% endif %}
+{% if post.category = 'game' %}
+<img src="/static/assets/img/game.png" id="category_img"></img>
+{% endif %}
+{% if post.category != 'game' %}
+{% if post.category != 'food' %}
+{% if post.category != 'sport' %}
+<img src="/static/assets/img/gita.png"id="category_img"></img>
+{% endif %}
+{% endif %}
+{% endif %}
+<h1 id="c"><a href="{% url "blog.views.post_detail" pk=post.pk %}">{{ post.title }}</a></h1>
+<p id="text_tag">{{ post.text }}</p>
+<p class="date_2">
+{{ post.created_date }}</p>
+</div>
+
+{% endfor %}
+		</div>
+	</div>
+{% endblock content %}
